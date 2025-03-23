@@ -1,6 +1,6 @@
 Meu primeiro projeto de API em java 17 com maven.. 
 
-```merdaid
+```mermaid
 classDiagram
     class User {
         +name: string
