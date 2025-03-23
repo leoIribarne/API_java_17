@@ -17,6 +17,7 @@ classDiagram
         +AddToCartButton: void
     }
 
+
     User *-- Account
     User *-- Card
     User *-- Input
