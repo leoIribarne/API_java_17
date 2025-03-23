@@ -4,6 +4,9 @@ Meu primeiro projeto de API em java 17 com maven..
 classDiagram
     class User {
         +Name: string
+    }
+    class Account {
+        +AccountCode: string
         +AccountBalance: string
     }
     class CartSection {
@@ -17,7 +20,9 @@ classDiagram
         +AddButton: string
     }
 
-  
+   
+
+    User *-- Account
     User *-- CartSection
     User *-- InputSection
  
