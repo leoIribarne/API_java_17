@@ -2,7 +2,7 @@ Meu primeiro projeto de API em java 17 com maven..
 
 ```mermaid
 classDiagram
-    class Header {
+    class User {
         +Name: string
         +AccountBalance: string
     }
@@ -16,10 +16,8 @@ classDiagram
         +InputField: string
         +AddButton: string
     }
-    class User {
-    }
 
-    User *-- Header
+  
     User *-- CartSection
     User *-- InputSection
  
