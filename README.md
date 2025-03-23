@@ -3,28 +3,32 @@ Meu primeiro projeto de API em java 17 com maven..
 ```mermaid
 classDiagram
     class User {
-        +Name: string
+        -String name
+        -Account account
+        -CartSection cartSection
+        -InputSection inputSection
     }
+
     class Account {
-        +AccountCode: string
-        +AccountBalance: string
+        -String accountCode
+        -String accountBalance
     }
+
     class CartSection {
-        +IconCarrinho: string
-        +ProductCount: number
-        +TotalValue: number
+        -String icon
+        -Number productCount
+        -Number totalValue
     }
+
     class InputSection {
-        +Instruction: string
-        +InputField: string
-        +AddButton: string
+        -String instruction
+        -String inputField
+        -String addButton
     }
 
-   
-
-    User *-- Account
-    User *-- CartSection
-    User *-- InputSection
+    User "1" *-- "1" Account
+    User "1" *-- "1" CartSection
+    User "1" *-- "1" InputSection
  
 
 ```
