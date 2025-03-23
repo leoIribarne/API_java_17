@@ -2,25 +2,26 @@ Meu primeiro projeto de API em java 17 com maven..
 
 ```mermaid
 classDiagram
+    class Header {
+        +Name: string
+        +AccountBalance: string
+    }
+    class CartSection {
+        +IconCarrinho: string
+        +ProductCount: number
+        +TotalValue: number
+    }
+    class InputSection {
+        +Instruction: string
+        +InputField: string
+        +AddButton: string
+    }
     class User {
-        +name: string
-    }
-    class Account {
-        +accountValue: number
-    }
-    class Card {
-        +ProductsInCart: number
-        +totalValue: number
-    }
-    class Input {
-        +EnterTheTotalAmountInput: number
-        +AddToCartButton: void
     }
 
-    User *-- Account 
-    User *-- Card 
-    User *-- Input 
-
+    User *-- Header
+    User *-- CartSection
+    User *-- InputSection
  
 
 ```
