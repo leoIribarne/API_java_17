@@ -17,9 +17,10 @@ classDiagram
         +AddToCartButton: void
     }
 
+    User *-- Account : list
+    User *-- Card : list
+    User *-- Input : list
 
-    User *-- Account
-    User *-- Card
-    User *-- Input
+ 
 
 ```
