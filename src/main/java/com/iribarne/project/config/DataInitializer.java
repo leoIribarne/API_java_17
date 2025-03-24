@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.core.env.Environment;
 
 import com.iribarne.project.domain.model.Account;
+import com.iribarne.project.domain.model.CartSection;
 import com.iribarne.project.domain.model.User;
 import com.iribarne.project.service.UserService;
 
@@ -48,28 +49,49 @@ public class DataInitializer implements CommandLineRunner {
         // Criar usuário 1 - Cliente Regular
         User user1 = new User();
         user1.setName("João Silva");
+        
         Account account1 = new Account();
         account1.setAccountCode("123456");
         account1.setAccountBalance("1000.00");
         user1.setAccount(account1);
+        
+        CartSection cart1 = new CartSection();
+        cart1.setProductCount(2);
+        cart1.setTotalValue(150.00);
+        user1.setCartSection(cart1);
+        
         userService.save(user1);
 
         // Criar usuário 2 - Cliente Premium
         User user2 = new User();
         user2.setName("Maria Santos");
+        
         Account account2 = new Account();
         account2.setAccountCode("654321");
         account2.setAccountBalance("2500.00");
         user2.setAccount(account2);
+        
+        CartSection cart2 = new CartSection();
+        cart2.setProductCount(5);
+        cart2.setTotalValue(450.00);
+        user2.setCartSection(cart2);
+        
         userService.save(user2);
 
         // Criar usuário 3 - Cliente Básico
         User user3 = new User();
         user3.setName("Pedro Oliveira");
+        
         Account account3 = new Account();
         account3.setAccountCode("987654");
         account3.setAccountBalance("500.00");
         user3.setAccount(account3);
+        
+        CartSection cart3 = new CartSection();
+        cart3.setProductCount(1);
+        cart3.setTotalValue(50.00);
+        user3.setCartSection(cart3);
+        
         userService.save(user3);
     }
 } 
