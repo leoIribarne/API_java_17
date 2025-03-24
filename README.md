@@ -32,3 +32,7 @@ classDiagram
  
 
 ```
+
+
+Link do figma : https://www.figma.com/design/7bOAKXJZZIa9yEFGpg819j/Untitled?t=d5IQXEKCMqqWqhAN-1
+
